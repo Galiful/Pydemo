@@ -4,13 +4,15 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>c0ec202e-9682-49fa-9f51-d5a5d79a3f77</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>test.py</StartupFile>
+    <StartupFile>
+    </StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>Pydemo</Name>
     <RootNamespace>Pydemo</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -24,8 +26,20 @@
     <Compile Include="crawler.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="drawxlsx.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="file.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Pydemo.py" />
     <Compile Include="test.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="maoyan.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="xpath.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

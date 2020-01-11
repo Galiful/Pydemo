@@ -324,3 +324,24 @@ with open('致橡树.txt', 'r', encoding='utf-8') as f:
 #type() 不会认为子类是一种父类类型，不考虑继承关系。
 #isinstance() 会认为子类是一种父类类型，考虑继承关系。
 #如果要判断两个类型是否相同推荐使用 isinstance()。
+class A:
+    pass
+ 
+class B(A):# B继承A
+    pass
+ 
+isinstance(A(), A)    # returns True
+type(A()) == A        # returns True
+isinstance(B(), A)    # returns True
+type(B()) == A        # returns False
+
+
+# urllib.request.urlopen(url, data=None, [timeout,]*, cafile=None, capath=None, cadefault=False, context=None)
+
+#表　达　式	描　　述
+#nodename	选取此节点的所有子节点
+#/	        从当前节点选取直接子节点
+#//	        从当前节点选取子孙节点
+#.	        选取当前节点
+#..	        选取当前节点的父节点
+#@	        选取属性
